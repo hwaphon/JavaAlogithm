@@ -58,7 +58,7 @@ public class TaskTwo {
 			return false;
 		}
 		
-		return sort(source).equals(compare);
+		return sort(source).equals(sort(compare));
 	}
 	
 	public static String sort(String s) {

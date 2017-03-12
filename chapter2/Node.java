@@ -37,6 +37,17 @@ public class Node {
 		return head;
 	}
 
+	public Node getNode(Node n, int d) {
+		Node head = n;
+		while (head != null) {
+			if (head.data == d) {
+				return head;
+			}
+			head = head.next;
+		}
+		return null;
+	}
+
 	public void print(Node n) {
 		while (n != null) {
 			System.out.print(n.data + " ");
