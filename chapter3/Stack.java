@@ -4,7 +4,7 @@ public class Stack {
 
 	private Node top = null;
 
-	private class Node {
+	class Node {
 		int data;
 		Node next = null;
 
@@ -61,6 +61,10 @@ public class Stack {
 		}
 
 		return temp;
+	}
+
+	public boolean isEmpty() {
+		return top == null;
 	}
 
 	public void print() {
